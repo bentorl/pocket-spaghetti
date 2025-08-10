@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pocket Spaghetti — Tiny Portions, Big Flavor</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#FF6B35" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='86' font-size='90'>🍝</text></svg>">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <!-- simple inline pocket-spaghetti logo -->
+        <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+          <rect x="1" y="18" width="62" height="36" rx="6" fill="#FFEDD5"/>
+          <path d="M12 34c6-6 14 0 20-4 4-2 8 2 12 2" stroke="#FF6B35" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <circle cx="48" cy="24" r="4" fill="#FF6B35"/>
+        </svg>
+        <span class="brand-text">Pocket Spaghetti</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button class="btn btn-primary" id="order-now">Order</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Tiny pockets. Huge taste.</h1>
+          <p class="lead">Hand-packed mini spaghetti servings — perfect for snacking, parties, and on-the-go cravings. Customize sauces, proteins, and pocket toppings.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" id="hero-order">Order Now</a>
+            <a class="btn btn-ghost" href="#menu">See Menu</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- decorative illustration placeholder -->
+          <div class="pocket-visual">
+            <div class="pocket"></div>
+            <div class="noodles"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <h2>Menu</h2>
+        <p class="section-sub">All pockets come in single or 3-pack and can be made vegetarian, with chicken, or meatball.</p>
+
+        <div class="menu-grid">
+          <article class="menu-card">
+            <h3>Classic Marinara</h3>
+            <p class="desc">Rich tomato sauce, basil, shaved Parmesan.</p>
+            <div class="meta">
+              <span class="price">$4.50</span>
+              <button class="btn btn-outline add-to-order" data-item='{"name":"Classic Marinara","price":4.5}'>Add</button>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <h3>Garlic Alfredo</h3>
+            <p class="desc">Creamy garlic sauce, cracked pepper, parsley.</p>
+            <div class="meta">
+              <span class="price">$5.00</span>
+              <button class="btn btn-outline add-to-order" data-item='{"name":"Garlic Alfredo","price":5.0}'>Add</button>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <h3>Spicy Arrabbiata</h3>
+            <p class="desc">Tomato, chili, roasted garlic — comes with chili crunch.</p>
+            <div class="meta">
+              <span class="price">$4.75</span>
+              <button class="btn btn-outline add-to-order" data-item='{"name":"Spicy Arrabbiata","price":4.75}'>Add</button>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <h3>Meatball Pocket</h3>
+            <p class="desc">Mini meatball medallions, marinara, Parm.</p>
+            <div class="meta">
+              <span class="price">$6.00</span>
+              <button class="btn btn-outline add-to-order" data-item='{"name":"Meatball Pocket","price":6.0}'>Add</button>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <h3>Vegan Pesto</h3>
+            <p class="desc">Basil-cashew pesto, cherry tomatoes.</p>
+            <div class="meta">
+              <span class="price">$5.25</span>
+              <button class="btn btn-outline add-to-order" data-item='{"name":"Vegan Pesto","price":5.25}'>Add</button>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <h3>Build Your Pocket</h3>
+            <p class="desc">Pick a sauce + protein + topping.</p>
+            <div class="meta">
+              <span class="price">From $4.00</span>
+              <button class="btn btn-outline" onclick="alert('Custom order popup coming soon!')">Customize</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About Pocket Spaghetti</h2>
+        <p>We started with one idea: make spaghetti convenient without losing soul. Tiny, perfectly sauced pockets created to be shared or savored solo.</p>
+        <ul class="values">
+          <li><strong>Handmade:</strong> small batches, fresh ingredients.</li>
+          <li><strong>Portable:</strong> eat anywhere—no fork required.</li>
+          <li><strong>Custom:</strong> swap proteins and spice level.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Contact & Hours</h2>
+        <div class="contact-grid">
+          <div>
+            <p><strong>Location:</strong> 123 Tiny Lane, Flavor Town</p>
+            <p><strong>Hours:</strong> Mon–Sat 11:00 — 20:00</p>
+            <p><strong>Phone:</strong> (555) 123-PIES</p>
+            <p><strong>Email:</strong> hello@pocketspaghetti.example</p>
+          </div>
+          <div>
+            <form id="contact-form">
+              <label>
+                Your name
+                <input type="text" name="name" required/>
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required/>
+              </label>
+              <label>
+                Message
+                <textarea name="message" rows="4" required></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Pocket Spaghetti — All rights reserved.</p>
+      <p class="made">Built with ❤️ for tiny appetites.</p>
+    </div>
+  </footer>
+
+  <!-- Order modal -->
+  <div class="modal" id="order-modal" aria-hidden="true" role="dialog" aria-labelledby="order-title">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" aria-label="Close order">✕</button>
+      <h3 id="order-title">Your Order</h3>
+      <div id="order-items" class="order-items">
+        <p class="empty">No items yet — add something from the menu.</p>
+      </div>
+      <div class="order-footer">
+        <div class="order-total">Total: <strong id="order-total">$0.00</strong></div>
+        <div class="order-actions">
+          <button class="btn btn-outline" id="clear-order">Clear</button>
+          <button class="btn btn-primary" id="checkout">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
